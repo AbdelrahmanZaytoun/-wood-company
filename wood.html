@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/wood.css">
+    <title>Jungle Factory</title>
+</head>
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar  navbar-expand-md bg-dark navbar-dark  py-0 fixed-top ">
+    <div class="container ">
+        <a class="navbar-brand" href="wood.html">
+           <img src="img/saw2.png" alt="factory logo" width="50" height="50">
+           <h2 class="d-inline align-middle ml-2" style="color:#a38e7c;">Jungle</h2>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#drop-down"> <span class="navbar-toggler-icon"></span> </button>
+        
+        <div class="collapse navbar-collapse" id="drop-down">
+          <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item"> <a class="nav-link" href="wood.html">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" >Explore</a> </li>
+                <li class="nav-item"> <a class="nav-link" >About Us</a> </li>
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="search" style="height:2rem;" >
+                    <button class="btn btn-primary btn-sm ml-1 "> search</button>
+                </form>
+                <li  id="line" class="nav-item ml-5 mt-1"> </li>
+                <li   class="nav-item ml-3 mt-1"> <button class=" btn btn-danger btn-sm ml-5" type="button" data-toggle="modal" data-target="#login" >Log In </button> </li>
+                <li class="nav-item mt-1">  <button class="  btn btn-info btn-sm ml-2 " type="button" data-toggle="modal" data-target="#register">Register <span class="badge  badge-danger ">60</span> </button>  </li>  
+          </ul>
+        </div>
+    </div>
+</nav>
+
+
+ <!-- Modal -->
+ <div class="modal fade " id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content " id="login-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">LOG IN</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+              <div class="modal-body">
+        <form>
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-users"></i></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="UserName">
+                </div>                
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                   
+                <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="password">
+                </div>      
+        </form>
+
+              </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-dark"data-dismiss="modal" aria-label="Close">log in</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">cancel</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!---model/register-->
+
+
+<div class="modal fade " id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog " role="document">
+          <div class="modal-content " id="register-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">REGISTER</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                    <form>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-users"></i></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="UserName">
+                            </div>
+                   
+                           
+                   
+                               <div class="input-group input-group-sm mb-2">
+                                       <div class="input-group-prepend">
+                                       <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                       </div>
+                                       <input type="text" class="form-control" placeholder="Email">
+                                   </div>
+                                   <div class="input-group input-group-sm mb-2">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder=" confirm Email">
+                                    </div>
+                   
+                                   <div class="input-group input-group-sm mb-2">
+                                           <div class="input-group-prepend">
+                                           <span class="input-group-text"><i class="fas fa-lock"></i></i></span>
+                                           </div>
+                                           <input type="text" class="form-control" placeholder="password ********">
+                                       </div>     
+                                       <div class="input-group input-group-sm mb-2">
+                                            <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="confirm password ********">
+                                        </div>   
+                        </form>
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-dark"data-dismiss="modal" aria-label="Close">Sign Up</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">cancel</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+   <!--carousel--> 
+
+<section id="showcase ">
+    <div class="carousel slide " id="mycarousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">  
+            <div class="carousel-item slide0 active "> 
+                        <div class="carousel-caption text-center ">
+                                <h1 class="display-2 "><strong style="color:#b6a596;"> Jungle The World</strong></h1>
+                                <p class="lead" style="color:#c0c0b5;">
+                                        The city is not a concrete jungle ... it is a human zoo.    
+                                </p>
+                                <a href="#" class="btn btn-outline-info btn-lg my-5"> <i class="fas fa-arrow-right mr-1"></i>Read More</a>
+                            </div>
+            </div>
+            <div class="carousel-item slide1 "> 
+                <div class="container">
+                        <div class="carousel-caption mr-auto my-5">
+                                <div class="card text-center bg-dark card-form col-lg-4  border border-info">
+                                    <div class="card-body  ">
+                                            <h3 class="mb-4 text-info">Subscribe</h3> 
+                                    <form>
+                                            <div class="form-group">
+                                                <div class="input-group-prepend">
+                                                <span class="input-group-text mr-1"><i class="fas fa-user"></i></span>
+                                              
+                                                <input type="text"  class="form-control form-control-md" placeholder="First Name">  </div>
+                                            </div>
+                                   
+                                            <div class="form-group">
+                                                    <div class="input-group-prepend">
+                                                    <span class="input-group-text mr-1"><i class="fas fa-user"></i></span>
+                                                  
+                                                    <input type="text"  class="form-control form-control-md" placeholder="Last Name">  </div>
+                                                </div>
+                                                <div class="form-group">
+                                                        <div class="input-group-prepend">
+                                                        <span class="input-group-text mr-1"><i class="fas fa-envelope"></i></span>
+                                                      
+                                                        <input type="text"  class="form-control form-control-md" placeholder="Email">  </div>
+                                                    </div>
+                                                    <input type="submit" value="submit" class="btn btn-outline-light mb-4 btn-block btn-md"  >
+                                                    </div>
+                                                    </form>
+                                </div>
+                            </div>                       
+                    </div>               
+            </div>
+            <div class="carousel-item slide2"> 
+                <div class="container">
+                        <div class="carousel-caption  text-right mb-5">
+                            <h1 class="display-3"> Cutting one</h1>
+                            <p class="lead">
+                                    Take the power to choose what you want to do and do it well.
+                            </p>
+                            <a href="#" class="btn btn-danger btn-lg"> Read More</a>
+                        </div>
+                    </div>               
+            </div>
+            <div class="carousel-item slide3"> 
+                <div class="container">
+                        <div class="carousel-caption  text-middle mb-5">
+                            <h1 class="display-3"> Wide Outstanding</h1>
+                            <p class="lead">
+                                    And into the forest you go, you will lose your mind and find your soul.     
+                            </p>
+                            <a href="#" class="btn btn-danger btn-lg mb-5 mt-3" > read more</a>  
+                        </div>
+                    </div>               
+            </div>
+        </div>
+        <a href="#mycarousel" class="carousel-control-prev" data-slide="prev"> <span class="carousel-control-prev-icon"></span></a>
+        <a href="#mycarousel" class="carousel-control-next" data-slide="next"> <span class="carousel-control-next-icon"></span></a>
+    </div>
+</section>
+
+<!--why section-->
+<div class="col-lg-12 col-sm-12 text-center bg-dark ">
+              
+        <p style="color: #a55506 " class=" domp display-4">  WE ARE IMPORTANT TO YOU !...</strong> </p>
+    <p class=" h3" style="color: #737472; margin-bottom: 0rem;"  >  We are the quickest wood factory in the planet  </p>
+    <a  href="#" class=" pomp btn btn-outline-secondary btn-lg px-5"> <i class="fas fa-arrow-right pr-3"></i>GO</a>
+</div>    
+<!--steps section-->
+<section   class="bg-steps">
+    <div class="container " id="steps">
+        <div class="row step-section ">
+            <div class="col-md-12 col-lg-4 text-center justify-content-center">
+                <img class="mb-4" src="img/trees.png" style="width:5rem;" >
+            <h3 > CUTTING</h3>
+                <div class="text-justifiy"><p>Our non-destructive wood testing gives accurate data to help us stop more damage to the structure. Our timber inspections are done with compression waves that safely pass through the structure, instead of drilling many holes that speed up rotting. </p></div>
+               </div>
+               <div class="col-md-12 col-lg-4 text-center">
+                    <img class="mb-4" src="img/cutting.png" style="width:5rem;" >   
+                    <h3 > CARVING</h3>
+                    <div ><p>Our test lab and inspections are IAS certified. We have a wide range of wood testing techniques for large and small-scale projects. Core samples can be taken with increment borers that provide a sample that can be studied for rot.</p></div>
+                   </div>
+                   <div class="col-md-12 col-lg-4 text-center">
+                        <img class="mb-4" src="img/van.png" style="width:5rem;" >     
+                        <h3 > DELIVERY</h3>
+                        <div ><p>This also shows how one bad support can ruin your structure’s strength. Each area of the structure is given a rating from one to one hundred per cent based on our 40 years of timber inspection experience.</p></div>
+                       </div>
+        </div>
+    </div>
+</section>
+
+<!---Accordion-->
+<section class="text-center ">
+<div  class="accordion " id="accordion1"> 
+<div class="card ">
+<div class="card-header bg-secondary accordion-hover" >
+<h5 class="mb-0">
+    <p class="py-2 accordion-spacing" href="#collapse1" data-toggle="collapse" data-target="#collapse1" style="color:rgb(255, 255, 255)">
+TIMBER STRUCTURE INSPECTIONS <i class="far fa-caret-square-down ml-2"></i>
+    </p>
+</h5>
+</div>
+<div class="collapse show" id="collapse1"  data-parent="#accordion1">
+<div class="card-body bg-info " style="color:rgb(243, 220, 220)" >
+        wood testing gives accurate data to help us stop more damage to the structure. Our timber inspections are done with compression waves that safely pass through the structure, instead of drilling many holes that speed up rotting. One of our specialties is the on-site, non-destructive testing of timber structures using our EPHOD™ process, a test used to see the timber structure’s health using compression waves, among other testing methods. With these tests and tools, our timber engineers and wood technicians build a repair and restore plan that is tailored to you. Sometimes, a core sample is needed. Using an increment borer a small sample is taken and sent to the lab to view the moisture levels in the wood. Although this would be considered destructive testing, we fill the hole. By filling the hole, we stop water and moisture from entering and starting to rot the structure.  
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="card-header bg-secondary accordion-hover" >
+        <h5 class="mb-0">
+            <p class="py-2 accordion-spacing" href="#collapse2" data-toggle="collapse" data-target="#collapse2" style="color:white">
+          TIMBER STRUCTURE ENGINEERING & DESIGN <i class="far fa-caret-square-down ml-2"></i>
+            </p>
+        </h5>       
+        </div>
+        <div class="collapse show" id="collapse2"  data-parent="#accordion1">     
+        <div class="card-body" style="background-color:rgb(195, 207, 86)">
+                After our timber inspection and lab tests, our engineers build. This report shows the the strong and weak parts of the timber structure. Our inspection reports show what part of the timber structure needs fixed. This also shows how one bad support can ruin your structure’s strength. Each area of the structure is given a rating from one to one hundred per cent based on our 40 years of timber inspection experience. Using this data, we form a plan with possible options for repair. With this comes a time frame of how soon each area will need to be fixed. Our engineers create working and construction detail plans. They also design new structures using top-of-the-line design software, that can be seen across the globe.        </div>
+        </div>
+        </div>
+        <div class="card">
+                <div class="card-header bg-secondary accordion-hover" >
+                <h5 class="mb-0">
+                    <p class="py-2 accordion-spacing" href="#collapse3" data-toggle="collapse" data-target="#collapse3"style="color:white;" >
+                    TIMBER QUALITY LAB TESTING <i class="far fa-caret-square-down ml-2"></i>
+                    </p>
+                </h5>
+                </div>
+                <div class="collapse show" id="collapse3"  data-parent="#accordion1">
+                <div class="card-body" style="background-color:rgb(207, 151, 86);color:rgb(53, 53, 53);" >
+                        Our test lab and inspections are IAS certified. We have a wide range of wood testing techniques for large and small-scale projects. Core samples can be taken with increment borers that provide a sample that can be studied for rot. Our tests show heavy decay resulting from water flowing under nails. Our treatment prevents rot and damage and gives the wood a beautiful orange color. Glued-laminated timber (glulam) is layers of treated wood glued together. Our glulam is laced with Kevlar. It makes our glulam so strong, it’s bulletproof. This make for both a stylish and strong option for your timber structures. Core samples show the extent of the rot and provide lab samples. The lab samples are used to find rot and fungi. This gives an understanding of further risks. They are also used to look at the ratio of the woods’ density in water.                 </div>
+                </div>
+                </div>
+    </div>
+
+<!---co-founders-->
+<section class="bg-dark py-5"> 
+<div class="container  ">
+        <div class="row py-5">
+        <div class=" col info-header py-3">
+                <h1 class="text-center text-info">
+                    JUNGLE STAFF
+                </h1>
+            </div>
+        </div>
+<div class="row py-5">
+<div class="col-lg-3 col-md-6 col-xs-12 text-center py-3">
+<div class="card people index-card shadow-card">
+    <div class="card-body ">
+     <img class="rounded-circle w-50  mb-3 img-fluid" src="img/face-3.png" alt="">
+     <h3 > Ahmed <br>Mohamed</h3>
+     <h5 class=" text-muted text-primary"> Manager</h5>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vitae exercitationem beatae cumque aliquid numquam alias veniam, ipsam facere culpa?</p>
+<div class="justfy-content-center ">
+    <a href="#"> <i class=" p-2 fab fa-facebook"  style="color:white"></i></a>
+    <a href="#"> <i class=" p-2 fab fa-twitter" style="color:white"></i></a>
+    <a href="#"> <i class=" p-2 fab fa-instagram" style="color:white"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 col-xs-12 text-center py-3">
+        <div class="card people index-card shadow-card">
+            <div class="card-body ">
+             <img class="rounded-circle w-50  mb-3 img-fluid" src="img/face0.png" alt="">
+             <h3 > Walied <br>Ibrahim</h3>
+             <h5 class=" text-muted text-primary"> Human Resources</h5>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vitae exercitationem beatae cumque aliquid numquam alias veniam, ipsam facere culpa?</p>
+        <div class="justfy-content-center ">
+            <a href="#"> <i class=" p-2 fab fa-facebook"  style="color:white"></i></a>
+            <a href="#"> <i class=" p-2 fab fa-twitter" style="color:white"></i></a>
+            <a href="#"> <i class=" p-2 fab fa-instagram" style="color:white"></i></a>  
+        </div>
+        </div>
+       </div> 
+        </div>
+        <div class="col-lg-3 col-md-6 col-xs-12 text-center py-3">
+                <div class="card people index-card shadow-card">
+                    <div class="card-body ">
+                     <img class="rounded-circle w-50  mb-3 img-fluid" src="img/face2.png" alt="">
+                     <h3 >  Mohamed <br>Ismail</h3>
+                     <h5 class=" text-muted text-primary"> Financial Officer </h5>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vitae exercitationem beatae cumque aliquid numquam alias veniam, ipsam facere culpa?</p>
+                <div class="justfy-content-center ">
+                    <a href="#"> <i class=" p-2 fab fa-facebook"  style="color:white"></i></a>
+                    <a href="#"> <i class=" p-2 fab fa-twitter" style="color:white"></i></a>
+                    <a href="#"> <i class=" p-2 fab fa-instagram" style="color:white"></i></a>  
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 text-center py-3">
+                        <div class="card people index-card shadow-card">
+                            <div class="card-body ">
+                             <img class="rounded-circle w-50  mb-3 img-fluid" src="img/face3.png" alt="">
+                             <h3 > Mostafa <br>Mohamed</h3>
+                             <h5 class=" text-muted text-primary"> Co-Worker</h5>
+                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus vitae exercitationem beatae cumque aliquid numquam alias veniam, ipsam facere culpa?</p>
+                        <div class="justfy-content-center ">
+                            <a href=""> <i class=" p-2 fab fa-facebook"  style="color:white"></i></a>
+                            <a href="#"> <i class=" p-2 fab fa-twitter" style="color:white"></i></a>
+                            <a href="#"> <i class=" p-2 fab fa-instagram" style="color:white"></i></a>                        
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+</div>
+</div>
+</section>
+
+<!--contact us-->
+<section class="contacts py-3">
+ <div class="container ">
+        <div class="row py-3">
+                <div class=" col  py-4">
+                        <h1 class="text-left text-secondary border-bottom border-secondary pb-5">
+                            SERVICES
+                        </h1>
+                    </div>
+                </div>
+     <div class="row">
+         
+    <div class="col-lg-3 col-sm-6">
+       <ul class="list-unstyled">
+
+        <li> <a href="#"> History of Wood </a></li>
+        <li> <a href="#"> Partnership with others</a></li>
+        <li> <a href="#"> Talk The Factory</a></li>
+        <li> <a href="#"> How We Cut The Wood</a></li>
+        <li> <a href="#"> Call Emergency</a></li>
+       
+        <li> <a href="#"> Contact Us</a></li>
+        <li> <a href="#"> Current Products</a></li>
+        <li> <a href="#"> Co-Founders</a></li>
+        <li> <a href="#"> Work & Stuff</a></li>
+        <li> <a href="#"> Visitors</a></li>
+        <li> <a href="#"> Location</a></li>
+        <li> <a href="#"> Service</a></li>
+       </ul>
+    </div>
+    
+    <div class="col-lg-3 col-sm-6">
+            <ul class="list-unstyled">
+            <li> <a href="#"> Manager </a></li>
+             <li> <a href="#"> Who We Are</a></li>
+             <li> <a href="#"> Talk About</a></li>
+             <li> <a href="#"> Delivery</a></li>
+             <li> <a href="#"> Call Emergency</a></li>
+     
+             <li> <a href="#"> Contact Us</a></li>
+             <li> <a href="#"> Current Products</a></li>
+             <li> <a href="#"> Co-Founders</a></li>
+             <li> <a href="#"> Work & Stuff</a></li>
+             <li> <a href="#"> Visitors</a></li>
+             <li> <a href="#"> Location</a></li>
+             <li> <a href="#"> Service</a></li>
+            </ul>
+         </div>
+
+         <div class="col-lg-3 col-sm-6">
+                <ul class="list-unstyled">
+                <li> <a href="#"> History of Wood </a></li>
+                <li> <a href="#"> Partnership with others</a></li>      
+                 <li> <a href="#"> Contact Us</a></li>
+                 <li> <a href="#"> Current Products</a></li>
+                 <li> <a href="#"> How We Cut The Wood</a></li>
+                 <li> <a href="#"> Call Emergency</a></li>
+                 <li> <a href="#"> Visitors</a></li>
+                 <li> <a href="#"> Location</a></li>
+                 <li> <a href="#"> Co-Founders</a></li>
+                 <li> <a href="#"> Work & Stuff</a></li>
+                 <li> <a href="#"> Talk The Factory</a></li>
+                 <li> <a href="#"> Service</a></li>
+                </ul>
+             </div>
+         <div class="col-lg-3 ml-auto col-sm-12  bg-dark py-3 rounded shadow-lg">
+     <h3 class="text-white py-2"> SEND MESSAGE</h3>
+     <form>
+         <div class="input-group input-group-sm mb-1">
+             <div class="input-group-prepend">
+             <span class="input-group-text"><i class="fas fa-user"></i></span>
+             </div>
+             <input type="text" class="form-control" placeholder="First Name">
+         </div>
+
+         <div class="input-group input-group-sm mb-2">
+                <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+            <div class="input-group input-group-sm mb-2">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="input-group input-group-sm mb-2">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-mobile"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="+90(xxx) xx xx">
+                    </div>
+
+                <div class="input-group input-group-sm mb-2">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-pen"></i></span>
+                        </div>
+                        <textarea type="text" class="form-control" placeholder="Description" rows="4">
+                            </textarea>
+                    </div>
+
+                    <input type="submit" value="submit" class="btn btn-primary mb-1 btn-block btn-md"  >
+     </form>
+             
+
+  
+
+
+ </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

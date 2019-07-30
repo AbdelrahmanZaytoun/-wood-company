@@ -1,0 +1,145 @@
+.navbar{
+    border-bottom:  #b35900 3px solid;
+    opacity: 0.9;
+
+}
+
+.pomp{
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+    
+}
+
+.domp{
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    
+    
+}
+
+h1{
+    letter-spacing: 10px;
+}
+
+button{
+    cursor: pointer;
+    
+    
+}
+.navbar .nav-link{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+}
+
+#line{
+    border-left: #b35900 2px solid;
+}
+
+#login-content{
+    background-color: #007bff
+}
+
+
+#register-content{
+    background-color: #d3b926
+}
+
+
+.carousel-item {
+    height: 680px;
+}
+
+.slide0{
+    background: url(../img/c1.jpg);
+    background-size: cover !important;
+
+
+    
+
+}
+
+.slide1{
+    background: url(../img/c2.jpg);
+    background-size: cover !important; 
+
+}
+.slide2{
+    background: url(../img/c6.jpg);
+    background-size: cover !important; 
+
+
+}
+.slide3{
+    background: url(../img/c3.jpg);
+    background-size: cover !important; 
+
+
+}
+section #showcase{
+    padding-top: 30px;
+}
+
+
+.step-section{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.bg-steps{
+    background-color: rgb(223, 229, 231);
+}
+
+
+
+.info-header{
+
+    border-bottom: 3px #b35900 solid;
+    width: 8rem ;
+}
+
+
+.people img {
+    margin-top: -60px;
+
+
+}
+
+.index-card {
+    background: white;
+  }
+  
+  .index-card:hover {
+    background: #74bfc9;
+    
+  }
+  .people:hover{
+      color:white;
+  }
+
+ 
+  .fab:hover{
+    color: rgb(182, 159, 59);
+
+  }
+  .contacts{
+       background-color: rgb(223, 229, 231)
+
+  }
+.accordion-hover:hover{
+    cursor: pointer;
+}
+
+.accordion-spacing{
+    letter-spacing: 6px;
+
+}
+
+.shadow-card{
+    box-shadow: 10px 9px 1px -4px rgb(85, 83, 83);
+    
+}
